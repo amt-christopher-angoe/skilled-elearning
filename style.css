@@ -1,0 +1,458 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+
+
+
+/*my css code*/
+* {
+    padding: 0;
+    font-family: Plus Jakarta Sans, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(180deg, white 0%, white 40%, #d2d5f1 100%);
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*title & nav*/
+nav{
+    /*display: flex;*/
+    height: 80px;
+    width: 100vw;
+    margin: 15px 5px 50px 0px;
+}
+#page-title{
+    margin: 10px 0 0 10px;
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: Plus Jakarta Sans;
+    float: left;
+    color: #13183f;
+}
+.title-button{
+    float: right;
+    width: 110px;
+    height: 40px;
+    background-color: #13183f;
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 100px;
+}
+
+
+/*end of title & nav*/
+/*header*/
+header{
+    margin: 0 5px 0 10px;
+    width: 100vw;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+    line-height: 70px;
+    font-family: Plus Jakarta Sans Extra Bold;
+}
+.text{
+    color: #83869A;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+.head-button{
+    margin: 20px 0 10px 0;
+    height: 40px;
+    width: 120px;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+.head-image{
+    width: 350px;
+    height: 350px;
+}
+.head-image img{
+    height: 100%;
+    width: 100%;
+}
+
+/*main*/
+main{
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#main-head{
+    height: 100px;
+    width: 350px;
+    padding: 18px;
+    margin: 5px 5px 50px 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+#main-head h2{
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+}
+.main-item{
+    flex-basis: 80%;
+    height: auto;
+    width: 350px;
+    margin: 15px 0 15px 0;
+    padding: 60px 20px 20px 20px;
+    background-color: white;
+    border: 0.5px solid whitesmoke;
+    z-index: -1;
+    border-radius: 10px;
+}
+.main-item a{
+    font-size: 20px;
+    color: #F74780;
+}
+.main-icons{
+    margin-bottom: -40px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+
+
+/*end of main*/
+/*footer*/
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #13183f;
+    padding: 30px 0;
+}
+#footer-title{
+    font-size: 36px;
+    float: left;
+    color: white;
+    margin-left: 25px;
+}
+#button-bkg{
+    width: 110px;
+    height: 40px;
+    float: right;
+    border-radius: 100px;
+}
+.footer-button{
+    float: right;
+    border: none;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*media query for tablet*/
+@media only screen and (min-width: 768px) {
+    body{
+        margin: 10px 10px 0px 50px;
+    }
+    nav{
+        /*display: flex;*/
+        width: calc(100vw - 60px);
+    }
+
+    #page-title{
+        font-size: 32px;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    #header-txt{
+        width: 50%;
+    }
+    .head-image{
+        float: right;
+    }
+    .head-image img{
+        src: url(./assets/image-hero-desktop.png) ;
+    }
+    
+    h1{
+        font-size: 50px;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    #head-button{
+        margin: 40px 0 20px 0;
+    }
+    /*main*/
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    #main-head{
+        height: 230px;
+        
+        flex-basis: 45%;
+        margin: 2.5%;
+        padding-top: 50px;
+    }
+    #main-head h2{
+        color: white;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .main-card{
+        margin: 1%;
+    }
+    .main-item{
+        flex-basis: 30%;
+        margin: 2.5%;
+    }
+    .main-item a{
+        font-size: 20px;
+        color: #F74780;
+    }
+    .main-icons{
+        margin-bottom: -40px;
+        margin-left: 20px;
+        z-index: 1;
+    }
+    footer{
+        margin-left: -50px;
+        width: 107%;
+    }   
+}
+
+
+/*media query for desktop*/
+/*header & nav media query*/
+@media only screen and (min-width: 1025px) {
+
+    nav{
+    margin-left: 150px;
+    width: 900px;
+    }
+    #page-title{
+        font-size: 32px;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 130px;
+    }
+    #header-txt{
+        margin-left: 100px;
+        width: 30%;
+    }
+
+    
+    h1{
+        font-size: 56px;
+    }
+    .text{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .head-image{
+        margin-top: -180px;
+        width: 700px;
+        height: 700px;
+    }
+    .head-image img{
+        height: 100%;
+        width: 100%;
+    }
+    /*main*/
+    main{
+        display: flex;
+        justify-content: center;
+        margin-left: -70px;
+    }
+    #main-head{
+        height: 300px;
+        flex-basis: 23%;
+        margin: 2.5%;
+        padding-top: 50px;
+    }
+    #main-head h2{
+        color: white;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .main-card{
+        margin: 1%;
+    }
+    .main-item{
+        flex-basis: 30%;
+        margin: 2.5%;
+        height: 300px;
+    }
+    .main-item a{
+        font-size: 20px;
+        color: #F74780;
+    }
+    .main-icons{
+        margin-bottom: -40px;
+        margin-left: 20px;
+        z-index: 1;
+    }
+    footer{
+        margin-left: -50px;
+        width: 104%;
+    }
+    .title-button:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .head-button:hover{
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    #button-bkg{
+        width: 110px;
+        height: 40px;
+        float: right;
+        border-radius: 100px;
+        background-color: white;
+        margin-right: 30px;
+    }
+
+    .footer-button:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
