@@ -195,7 +195,7 @@ h1{
 /*main*/
 main{
     margin: 0 10px 0 10px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -214,7 +214,7 @@ main{
     line-height: 28px;
 }
 .main-item{
-    flex-basis: 80%;
+    flex-basis: 40%;
     height: auto;
     width: 350px;
     margin: 15px 0 15px 0;
@@ -267,6 +267,88 @@ footer{
     border-radius: 100px;
     background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
 }
+.desk-br{
+    display: none;
+}
+
+
+/*media query for small tablet*/
+@media only screen and (min-width: 740px){
+    body{
+        width: 100vw;
+    }
+    
+    #page-title{
+        font-size: 32px;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-around !important;
+    }
+    #header-txt{
+        width: 50%;
+    }
+    .head-image{
+        float: right;
+        overflow: hidden;
+    }
+    .head-image img{
+        width: 500px;
+        height: 470px;
+        margin-top: -80px;
+        margin-right: -150px;
+        src: url(./assets/image-hero-desktop.png) ;
+    }
+    
+    h1{
+        font-size: 50px;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    #head-button{
+        margin: 40px 0 20px 0;
+    }   
+    main{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    } 
+    #main-head{
+        height: 230px;
+        flex-basis: 45%;
+        margin: 2.5%;
+        padding-top: 50px;
+    }
+    #main-head h2{
+        color: white;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .main-card{
+        margin: 1%;
+    }
+    .main-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    .main-item a{
+        font-size: 20px;
+        color: #F74780;
+    }
+    .main-icons{
+        margin-bottom: -40px;
+        margin-left: 20px;
+        z-index: 1;
+    }
+    footer{
+        margin-left: -10px;
+        width: 101%;
+    }
+}
+
 
 
 
@@ -279,9 +361,11 @@ footer{
 
 
 /*media query for tablet*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     body{
-        margin: 10px 10px 0px 50px;
+        margin: 10px 10px 0px 40px;
+        width: 1;
+    
     }
     nav{
         /*display: flex;*/
@@ -294,15 +378,20 @@ footer{
     
     header{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-around !important;
     }
     #header-txt{
         width: 50%;
     }
     .head-image{
         float: right;
+        overflow: hidden;
     }
     .head-image img{
+        width: 500px;
+        height: 470px;
+        margin-top: -80px;
+        margin-right: -150px;
         src: url(./assets/image-hero-desktop.png) ;
     }
     
@@ -320,10 +409,11 @@ footer{
     main{
         display: flex;
         justify-content: center;
+        width: 100%;
+    
     }
     #main-head{
         height: 230px;
-        
         flex-basis: 45%;
         margin: 2.5%;
         padding-top: 50px;
@@ -337,7 +427,7 @@ footer{
         margin: 1%;
     }
     .main-item{
-        flex-basis: 30%;
+        flex-basis: 45%;
         margin: 2.5%;
     }
     .main-item a{
@@ -351,8 +441,11 @@ footer{
     }
     footer{
         margin-left: -50px;
-        width: 107%;
+        width: 108%;
     }   
+    .desk-br{
+        display: none;
+    }
 }
 
 
@@ -366,6 +459,9 @@ footer{
     }
     #page-title{
         font-size: 32px;
+    }
+    .title-button{
+        z-index: 1;
     }
     
     header{
@@ -387,13 +483,16 @@ footer{
         line-height: 28px;
     }
     .head-image{
-        margin-top: -180px;
-        width: 700px;
-        height: 700px;
+        margin-top: -250px;
+        width: 600px;
+        height: 800px;
+        z-index: -5;
+        
     }
     .head-image img{
-        height: 100%;
-        width: 100%;
+        width: 720px;
+        height: 720px;
+        z-index: -2;
     }
     /*main*/
     main{
@@ -424,6 +523,9 @@ footer{
         font-size: 20px;
         color: #F74780;
     }
+    .main-item a:hover{
+        opacity: 0.6;
+    }
     .main-icons{
         margin-bottom: -40px;
         margin-left: 20px;
@@ -434,7 +536,7 @@ footer{
         width: 104%;
     }
     .title-button:hover{
-        opacity: 0.8;
+        opacity: 0.7;
         cursor: pointer;
     }
 
@@ -454,5 +556,11 @@ footer{
     .footer-button:hover{
         cursor: pointer;
         opacity: 0.8;
+    }
+    .tab-mobile-br{
+        display: none;
+    }
+    .desk-br{
+        display: block;
     }
 }
