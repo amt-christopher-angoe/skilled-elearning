@@ -118,6 +118,7 @@ input, select {
 }
 body{
     background: linear-gradient(180deg, white 0%, white 40%, #d2d5f1 100%);
+    overflow-x: hidden;
     
 }
 
@@ -448,6 +449,9 @@ footer{
 /*media query for desktop*/
 /*header & nav media query*/
 @media only screen and (min-width: 1025px) {
+    body{
+        overflow-x: hidden;
+    }
 
     nav{
     margin-left: 150px;
