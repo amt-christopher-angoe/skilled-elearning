@@ -273,11 +273,7 @@ footer{
 
 
 /*media query for small tablet*/
-@media only screen and (min-width: 740px){
-    body{
-        width: 100vw;
-    }
-    
+@media only screen and (min-width: 740px){ 
     #page-title{
         font-size: 32px;
     }
