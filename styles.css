@@ -494,7 +494,6 @@ footer{
     main{
         display: flex;
         justify-content: center;
-        margin-left: -70px;
     }
     #main-head{
         height: 300px;
